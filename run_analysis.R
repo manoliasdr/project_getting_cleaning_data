@@ -17,8 +17,8 @@ features[,2] <- as.character(features[,2])
 # Extract only the data on mean and standard deviation
 featWanted <- grep(".*mean.*|.*std.*", features[,2])
 featWanted.names <- features[featWanted,2]
-featWanted.names = gsub('-mean', 'Mean', featWanted.names)
-featWanted.names = gsub('-std', 'Std', featWanted.names)
+featWanted.names <-gsub('-mean', 'Mean', featWanted.names)
+featWanted.names <- gsub('-std', 'Std', featWanted.names)
 featWanted.names <- gsub('[-()]', '', featWanted.names)
 # Load the datasets
 #train dataset
