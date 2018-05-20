@@ -1,6 +1,6 @@
 **Data**
 
-The first row of *tidy.txt* contains the names of the variables.They are listed and described in the Variables section, and the following rows contain the values of these variables.
+The first row of *tidydata.txt* contains the names of the variables.They are listed and described in the Variables section, and the following rows contain the values of these variables.
 
 **Variables**
 *  subject : The ID of the test subject
