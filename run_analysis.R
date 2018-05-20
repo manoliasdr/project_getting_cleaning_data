@@ -27,7 +27,7 @@ trainActivities <- read.table("UCI HAR Dataset/train/Y_train.txt")
 trainSubjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
 traindataset <- cbind(trainSubjects, trainActivities, traindataset)
 #test dataset
-testdataset <- read.table("UCI HAR Dataset/test/X_test.txt")[featuresWanted]
+testdataset <- read.table("UCI HAR Dataset/test/X_test.txt")[featWanted]
 testActivities <- read.table("UCI HAR Dataset/test/Y_test.txt")
 testSubjects <- read.table("UCI HAR Dataset/test/subject_test.txt")
 testdataset <- cbind(testSubjects, testActivities, testdataset)
