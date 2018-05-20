@@ -2,7 +2,7 @@ Data collected from the accelerometer and gyroscope of the Samsung Galaxy S smar
 
 This repository contains:
 * README.md, this file, which provides an overview of the data set and how it was created.
-* tidy.txt, which contains the data set.
+* tidydata.txt, which contains the data set.
 * CodeBook.md, the code book, which describes the contents of the data set 
 * run_analysis.R, the R script that was used to create the data set 
 
