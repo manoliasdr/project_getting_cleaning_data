@@ -22,7 +22,7 @@ featWanted.names <- gsub('-std', 'Std', featWanted.names)
 featWanted.names <- gsub('[-()]', '', featWanted.names)
 # Load the datasets
 #train dataset
-traindataset <- read.table("UCI HAR Dataset/train/X_train.txt")[featuresWanted]
+traindataset <- read.table("UCI HAR Dataset/train/X_train.txt")[featWanted]
 trainActivities <- read.table("UCI HAR Dataset/train/Y_train.txt")
 trainSubjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
 traindataset <- cbind(trainSubjects, trainActivities, traindataset)
@@ -32,7 +32,7 @@ testActivities <- read.table("UCI HAR Dataset/test/Y_test.txt")
 testSubjects <- read.table("UCI HAR Dataset/test/subject_test.txt")
 testdataset <- cbind(testSubjects, testActivities, testdataset)
 # merge train and test dataset  
-allData <- rbind(train, test)
+allData <- rbind(traindataset, testdataset)
 #Labels
 colnames(allData) <- c("subject", "activity", featWanted.names)
 # turn activities & subjects into factors
