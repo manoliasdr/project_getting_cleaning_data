@@ -40,4 +40,4 @@ allData$activity <- factor(allData$activity, levels = activityLabels[,1], labels
 allData$subject <- as.factor(allData$subject)
 allData.melted <- melt(allData, id = c("subject", "activity"))
 allData.mean <- dcast(allData.melted, subject + activity ~ variable, mean)
-write.table(allData.mean, "tidy.txt", row.names = FALSE, quote = FALSE)
+write.table(allData.mean, "tidydata.txt", row.names = FALSE, quote = FALSE)
